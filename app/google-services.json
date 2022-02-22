@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "50243366213",
+    "project_id": "vegbags-2d13e",
+    "storage_bucket": "vegbags-2d13e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50243366213:android:839514d6c3311e84a4622c",
+        "android_client_info": {
+          "package_name": "com.vegbags"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50243366213-gn04tvkv9brs63rf55aa04rqg12nge2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vegbags",
+            "certificate_hash": "1629829b764c6d30ad84d4a70d602030b4dad9a5"
+          }
+        },
+        {
+          "client_id": "50243366213-jb4ksk74vf749smh2rmfmjqg81bf18lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnXOhcN6QSF7HN0l3xmWflZhhMVD84yKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50243366213-jb4ksk74vf749smh2rmfmjqg81bf18lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

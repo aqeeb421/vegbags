@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="90"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center_horizontal"
+            android:text="More Info"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/close_dialog"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_close"
+                app:tint="@android:color/holo_red_dark" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/CName_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/lato"
+        android:hint="Enter Contact Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:requiresFadingEdge="horizontal" />
+
+    <EditText
+        android:id="@+id/CAddress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/lato"
+        android:hint="Enter Address"
+        android:inputType="textPostalAddress"
+        android:maxLines="3"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/pinCode_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:ems="6"
+        android:fontFamily="@font/lato"
+        android:hint="Enter Pin Code"
+        android:inputType="textPostalAddress"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/Phone_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/altPhone_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Enter Alt Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnSubmit_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Add Address"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

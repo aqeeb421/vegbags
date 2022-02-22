@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/ordersFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".view.activity.CreditLedgerActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="My Transactions"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/extraLargeText" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="@dimen/smallText"
+                android:background="@drawable/background_layout"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Outstanding Balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mediumText" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="₹ 0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="@color/light_grey"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+
+                <RadioButton
+                    android:id="@+id/rbDues"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/left_custom_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Dues"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mediumText" />
+
+                <RadioButton
+                    android:id="@+id/rbPayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/left_custom_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="Payments"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/mediumText" />
+
+
+            </RadioGroup>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_TransactionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/llTab"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:layout_above="@+id/payNow"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <LinearLayout
+            android:id="@+id/noDara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:src="@drawable/nodatafound"
+                android:textColor="@color/black"
+                android:textSize="@dimen/extraLargeText" />
+
+        </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/payNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="50"
+            android:background="@drawable/left_custom_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Pay Now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumText" />
+
+
+    </RelativeLayout>
+</layout>

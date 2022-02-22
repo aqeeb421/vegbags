@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/background_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cart_img"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="20"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo_white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cart_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/lato"
+                android:text="Potatoes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/largeText" />
+
+            <TextView
+                android:id="@+id/cart_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/lato_light"
+                android:text="Small Potatoes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediumText" />
+
+            <TextView
+                android:id="@+id/cart_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/lato"
+                android:text="₹. 12000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/smallText" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llActions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llCounter"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_layout"
+                android:gravity="center"
+                android:visibility="gone">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_minus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingStart="4dp"
+                    android:src="@drawable/substract"
+                    android:visibility="visible"
+                    app:tint="@color/primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cart_qty"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="1"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/mediumText" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingEnd="4dp"
+                    android:src="@drawable/add"
+                    app:tint="@color/primary" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/background"
+                android:fontFamily="@font/lato"
+                android:includeFontPadding="false"
+                android:paddingStart="4dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="2dp"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/extraLargeText"
+                android:visibility="visible"
+                app:fontFamily="@font/lato" />
+
+            <TextView
+                android:id="@+id/cart_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Bags"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/mediumText" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lato"
+            android:text="swipe left to delete this item."
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/mediumText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
